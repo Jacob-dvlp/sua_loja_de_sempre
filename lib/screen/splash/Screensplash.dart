@@ -33,7 +33,7 @@ class ScreenSplash extends StatelessWidget {
                 ),
                 CircularProgressIndicator(
                   backgroundColor: Colors.white,
-                  color: Colors.yellow,
+                  color: Colors.black,
                 )
               ],
             ),

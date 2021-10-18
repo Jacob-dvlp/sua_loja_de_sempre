@@ -11,7 +11,6 @@ class AppMain extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       initialRoute: RutasPage.INICIAL,
       getPages: RutasPage.routas,
-      theme: ThemeData(primaryColor: Colors.yellow),
     );
   }
 }
