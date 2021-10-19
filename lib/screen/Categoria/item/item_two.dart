@@ -28,7 +28,7 @@ class Categroytwo extends StatelessWidget {
                     CardCatalogo(
                       imagem:
                           "assets/nike/air-force-1-older-shoes-xjblV7-removebg-preview.png",
-                      marca: "Nike Air Force",
+                      marca: "Nike Air ",
                       valor: "50.000",
                     ),
                     CardCatalogo(

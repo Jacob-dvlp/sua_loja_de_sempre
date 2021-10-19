@@ -37,7 +37,7 @@ class CardCatalogo extends StatelessWidget {
                       )
                     ],
                   ),
-                  Image.asset("$imagem"),
+                  Image.asset("$imagem",width: 200,height: 150,),
                   Text(
                     "$marca",
                     style: TextStyle(fontSize: 19, color: Colors.grey),
