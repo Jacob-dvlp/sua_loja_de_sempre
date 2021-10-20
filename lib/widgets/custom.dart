@@ -7,6 +7,7 @@ class CardCatalogo extends StatelessWidget {
   final String? imagem;
   final String? marca;
   final String? rota;
+  final List? argument;
 
   const CardCatalogo({
     Key? key,
@@ -14,6 +15,7 @@ class CardCatalogo extends StatelessWidget {
     this.imagem,
     this.marca,
     this.rota,
+    this.argument,
   }) : super(key: key);
 
   @override
@@ -35,7 +37,7 @@ class CardCatalogo extends StatelessWidget {
                     children: [
                       Icon(Icons.favorite_outline),
                       GestureDetector(
-                        onTap: () => Get.toNamed("$rota"),
+                        onTap: () => Get.toNamed("$rota", arguments: argument),
                         child: Icon(
                           Icons.visibility,
                           color: Colors.orange,
@@ -90,6 +92,74 @@ class CardCategorias extends StatelessWidget {
         child: Image.asset(
           "assets/catalogs/$image",
           width: 100,
+        ),
+      ),
+    );
+  }
+}
+
+class CardsTamanho extends StatelessWidget {
+  final int? tamanho;
+  final Color? colorcard, colorstext;
+  const CardsTamanho({
+    Key? key,
+    this.tamanho,
+    this.colorcard,
+    this.colorstext,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return ClipRRect(
+      child: Card(
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(10),
+          child: Container(
+            height: 50,
+            width: 60,
+            color: colorcard,
+            child: Center(
+              child: Text(
+                "US $tamanho",
+                style: TextStyle(
+                  color: colorstext,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class CardsCor extends StatelessWidget {
+  final Color? colorcard;
+  const CardsCor({
+    Key? key,
+    this.colorcard,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return ClipRRect(
+      child: Card(
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(10),
+          child: Container(
+            height: 50,
+            width: 60,
+            child: Center(
+                child: ClipRRect(
+              borderRadius: BorderRadius.circular(10),
+              child: Container(
+                width: 20,
+                height: 20,
+                color: colorcard ,
+              ),
+            )),
+          ),
         ),
       ),
     );

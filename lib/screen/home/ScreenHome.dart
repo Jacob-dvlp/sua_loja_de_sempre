@@ -54,6 +54,7 @@ class HomePage extends StatelessWidget {
               children: [
                 CardCatalogo(
                   rota: RoutasNome.SOBREITEM,
+                  argument: ["Detalhes", "assets/item/adidas-ten.png"],
                   imagem: "assets/item/adidas-ten.png",
                   marca: "Adidas",
                   valor: "50.000",

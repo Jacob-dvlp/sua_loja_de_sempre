@@ -3,7 +3,7 @@ import 'package:previsao_de_tempo/screen/Categoria/item/item_tree.dart';
 import 'package:previsao_de_tempo/screen/Categoria/item/item_one.dart';
 import 'package:previsao_de_tempo/screen/Categoria/item/item_two.dart';
 import 'package:previsao_de_tempo/screen/home/ScreenHome.dart';
-import 'package:previsao_de_tempo/screen/sobre/about.dart';
+import 'package:previsao_de_tempo/screen/sobre-puma/about.dart';
 import 'package:previsao_de_tempo/screen/splash/Screensplash.dart';
 
 part 'screen_routas.dart';
