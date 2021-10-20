@@ -1,5 +1,5 @@
 import 'package:get/get_navigation/get_navigation.dart';
-import 'package:previsao_de_tempo/screen/Categoria/category.dart';
+import 'package:previsao_de_tempo/screen/Categoria/item/item_tree.dart';
 import 'package:previsao_de_tempo/screen/Categoria/item/item_one.dart';
 import 'package:previsao_de_tempo/screen/Categoria/item/item_two.dart';
 import 'package:previsao_de_tempo/screen/home/ScreenHome.dart';
@@ -22,8 +22,8 @@ class RutasPage {
       transition: Transition.zoom,
     ),
     GetPage(
-      name: RoutasNome.CATEGORY,
-      page: () => Categroy(),
+      name: RoutasNome.CATEGORYTREE,
+      page: () => Categroytree(),
     ),
     GetPage(
       name: RoutasNome.CATEGORYONE,

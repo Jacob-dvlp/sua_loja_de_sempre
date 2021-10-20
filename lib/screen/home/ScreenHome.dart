@@ -39,7 +39,7 @@ class HomePage extends StatelessWidget {
               ),
               GestureDetector(
                 onTap: () =>
-                    Get.toNamed(RoutasNome.CATEGORY, arguments: ["Puma"]),
+                    Get.toNamed(RoutasNome.CATEGORYTREE, arguments: ["Puma"]),
                 child: CardCategorias(
                   color: Colors.white,
                   image: "puma.png",
