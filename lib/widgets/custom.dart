@@ -1,16 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 // ignore: must_be_immutable
 class CardCatalogo extends StatelessWidget {
   final String? valor;
   final String? imagem;
   final String? marca;
+  final String? rota;
 
   const CardCatalogo({
     Key? key,
     this.valor,
     this.imagem,
     this.marca,
+    this.rota,
   }) : super(key: key);
 
   @override
@@ -31,13 +34,20 @@ class CardCatalogo extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Icon(Icons.favorite_outline),
-                      Icon(
-                        Icons.visibility,
-                        color: Colors.orange,
+                      GestureDetector(
+                        onTap: () => Get.toNamed("$rota"),
+                        child: Icon(
+                          Icons.visibility,
+                          color: Colors.orange,
+                        ),
                       )
                     ],
                   ),
-                  Image.asset("$imagem",width: 200,height: 150,),
+                  Image.asset(
+                    "$imagem",
+                    width: 200,
+                    height: 150,
+                  ),
                   Text(
                     "$marca",
                     style: TextStyle(fontSize: 19, color: Colors.grey),

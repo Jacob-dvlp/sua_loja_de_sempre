@@ -3,6 +3,7 @@ import 'package:previsao_de_tempo/screen/Categoria/category.dart';
 import 'package:previsao_de_tempo/screen/Categoria/item/item_one.dart';
 import 'package:previsao_de_tempo/screen/Categoria/item/item_two.dart';
 import 'package:previsao_de_tempo/screen/home/ScreenHome.dart';
+import 'package:previsao_de_tempo/screen/sobre/about.dart';
 import 'package:previsao_de_tempo/screen/splash/Screensplash.dart';
 
 part 'screen_routas.dart';
@@ -32,6 +33,11 @@ class RutasPage {
     GetPage(
       name: RoutasNome.CATEGORYTWO,
       page: () => Categroytwo(),
+      transition: Transition.zoom,
+    ),
+     GetPage(
+      name: RoutasNome.SOBREITEM,
+      page: () => SobreItem(),
       transition: Transition.zoom,
     )
   ];

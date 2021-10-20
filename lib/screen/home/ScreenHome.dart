@@ -53,6 +53,7 @@ class HomePage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 CardCatalogo(
+                  rota: RoutasNome.SOBREITEM,
                   imagem: "assets/item/adidas-ten.png",
                   marca: "Adidas",
                   valor: "50.000",
