@@ -1,8 +1,6 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:previsao_de_tempo/screen/sobre-puma/controllerpuma.dart';
+import 'package:previsao_de_tempo/screen/sobre-item/controllersobre.dart';
 import 'package:previsao_de_tempo/widgets/custom.dart';
 
 class SobreItem extends StatelessWidget {
@@ -10,8 +8,8 @@ class SobreItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetBuilder<Controllerpuma>(
-      init: Controllerpuma(),
+    return GetBuilder<ControllerSobre>(
+      init: ControllerSobre(),
       builder: (_) => Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.yellow[900],
@@ -29,7 +27,7 @@ class SobreItem extends StatelessWidget {
               ),
               width: Get.width,
               child: Image.asset(
-                _.data[1],
+                _.data[2],
                 width: 300,
               ),
             ),
@@ -41,7 +39,7 @@ class SobreItem extends StatelessWidget {
                     Align(
                       alignment: Alignment.topLeft,
                       child: Text(
-                        "Adidas",
+                        _.data[1],
                         style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,

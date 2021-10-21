@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
 
-class Controllerpuma extends GetxController {
+class ControllerSobre extends GetxController {
   var data = Get.arguments;
 }

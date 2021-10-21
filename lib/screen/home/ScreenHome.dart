@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:previsao_de_tempo/routers/stactic_routas_nomes.dart';
-import 'package:previsao_de_tempo/util/constantes.dart';
-import 'package:previsao_de_tempo/widgets/custom.dart';
+
+import '../../routers/stactic_routas_nomes.dart';
+import '../../util/constantes.dart';
+import '../../widgets/custom.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -54,12 +55,22 @@ class HomePage extends StatelessWidget {
               children: [
                 CardCatalogo(
                   rota: RoutasNome.SOBREITEM,
-                  argument: ["Detalhes", "assets/item/adidas-ten.png"],
+                  argument: [
+                    "Detalhes",
+                    "Adidas",
+                    "assets/item/adidas-ten.png"
+                  ],
                   imagem: "assets/item/adidas-ten.png",
                   marca: "Adidas",
                   valor: "50.000",
                 ),
                 CardCatalogo(
+                  rota: RoutasNome.SOBREITEM,
+                  argument: [
+                    "Detalhes",
+                    "Puma",
+                    "assets/item/puma-item.png",
+                  ],
                   imagem: "assets/item/puma-item.png",
                   marca: "Puma",
                   valor: "40.000",
@@ -73,18 +84,90 @@ class HomePage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 CardCatalogo(
+                  rota: RoutasNome.SOBREITEM,
+                  argument: [
+                    "Detalhes",
+                    "Puma snakers",
+                    "assets/item/puma_sna-item.png"
+                  ],
                   imagem: "assets/item/puma_sna-item.png",
                   marca: "Puma snakers",
                   valor: "30.000",
                 ),
                 CardCatalogo(
+                  rota: RoutasNome.SOBREITEM,
+                  argument: [
+                    "Detalhes",
+                    "Nike Air-Max",
+                    "assets/item/air-max-item.png",
+                  ],
                   imagem: "assets/item/air-max-item.png",
                   marca: "Nike Air-Max",
                   valor: "46.000",
                 ),
               ],
             ),
-          )
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                CardCatalogo(
+                  rota: RoutasNome.SOBREITEM,
+                  argument: [
+                    "Detalhes",
+                    "Puma snakers",
+                    "assets/item/puma_sna-item.png"
+                  ],
+                  imagem: "assets/item/puma_sna-item.png",
+                  marca: "Puma snakers",
+                  valor: "30.000",
+                ),
+                CardCatalogo(
+                  rota: RoutasNome.SOBREITEM,
+                  argument: [
+                    "Detalhes",
+                    "Nike Air-Max",
+                    "assets/item/air-max-item.png",
+                  ],
+                  imagem: "assets/item/air-max-item.png",
+                  marca: "Nike Air-Max",
+                  valor: "46.000",
+                ),
+              ],
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                CardCatalogo(
+                  rota: RoutasNome.SOBREITEM,
+                  argument: [
+                    "Detalhes",
+                    "Adidas",
+                    "assets/item/adidas-ten.png"
+                  ],
+                  imagem: "assets/item/adidas-ten.png",
+                  marca: "Adidas",
+                  valor: "50.000",
+                ),
+                CardCatalogo(
+                  rota: RoutasNome.SOBREITEM,
+                  argument: [
+                    "Detalhes",
+                    "Puma",
+                    "assets/item/puma-item.png",
+                  ],
+                  imagem: "assets/item/puma-item.png",
+                  marca: "Puma",
+                  valor: "40.000",
+                ),
+              ],
+            ),
+          ),
         ],
       ),
     );

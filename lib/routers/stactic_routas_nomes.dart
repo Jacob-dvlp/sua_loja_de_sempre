@@ -1,10 +1,11 @@
 import 'package:get/get_navigation/get_navigation.dart';
-import 'package:previsao_de_tempo/screen/Categoria/item/item_tree.dart';
-import 'package:previsao_de_tempo/screen/Categoria/item/item_one.dart';
-import 'package:previsao_de_tempo/screen/Categoria/item/item_two.dart';
-import 'package:previsao_de_tempo/screen/home/ScreenHome.dart';
-import 'package:previsao_de_tempo/screen/sobre-puma/about.dart';
-import 'package:previsao_de_tempo/screen/splash/Screensplash.dart';
+
+import '../screen/Categoria/item/item_one.dart';
+import '../screen/Categoria/item/item_tree.dart';
+import '../screen/Categoria/item/item_two.dart';
+import '../screen/home/ScreenHome.dart';
+import '../screen/sobre-item/sobre_item.dart';
+import '../screen/splash/Screensplash.dart';
 
 part 'screen_routas.dart';
 
@@ -35,10 +36,10 @@ class RutasPage {
       page: () => Categroytwo(),
       transition: Transition.zoom,
     ),
-     GetPage(
+    GetPage(
       name: RoutasNome.SOBREITEM,
       page: () => SobreItem(),
       transition: Transition.zoom,
-    )
+    ),
   ];
 }

@@ -7,4 +7,5 @@ abstract class RoutasNome {
   static const CATEGORYONE = "/categorytone";
   static const CATEGORYTWO = "/categorytwo";
   static const SOBREITEM = "/sobreitem";
+
 }
