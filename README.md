@@ -1,16 +1,20 @@
-# Flutter
+## UI FEITO COM FLUTTER
 
-A new Flutter project.
+## Treinamento
 
-## Getting Started  
+<b>Objectivo</b>   
 
-This project is a starting point for a Flutter application.
+<p>Praticando os conceitos de UI</p>
 
-A few resources to get you started if this is your first Flutter project:
+<br>
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+![Screen index](https://github.com/Jacob-dvlp/api-finds/blob/master/index.jpg)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![user](https://github.com/Jacob-dvlp/api-finds/blob/master/user.jpg)
+
+ 
+  <p align=center > Desenvolvido por  <b> Jacob Larte </b>  ----- Me adicione no <a href="https://www.linkedin.com/in/jacob-lartes/">Linkedin</a> </p>
+ 
+
+
+ 

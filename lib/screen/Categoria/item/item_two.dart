@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:previsao_de_tempo/routers/stactic_routas_nomes.dart';
 import 'package:previsao_de_tempo/screen/Categoria/controllerCategory.dart';
 import 'package:previsao_de_tempo/widgets/custom.dart';
 
@@ -26,12 +27,24 @@ class Categroytwo extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     CardCatalogo(
+                      rota: RoutasNome.SOBREITEM,
+                      argument: [
+                        "Detalhes",
+                        "Nike Air",
+                        "assets/nike/air-force-1-older-shoes-xjblV7-removebg-preview.png",
+                      ],
                       imagem:
                           "assets/nike/air-force-1-older-shoes-xjblV7-removebg-preview.png",
-                      marca: "Nike Air ",
+                      marca: "Nike Air",
                       valor: "50.000",
                     ),
                     CardCatalogo(
+                      rota: RoutasNome.SOBREITEM,
+                      argument: [
+                        "Detalhes",
+                        "Nike Air Max",
+                        "assets/nike/air-max-90-premium-mens-shoes-PM9RVw-removebg-preview.png",
+                      ],
                       imagem:
                           "assets/nike/air-max-90-premium-mens-shoes-PM9RVw-removebg-preview.png",
                       marca: "Nike Air Max",
@@ -46,12 +59,24 @@ class Categroytwo extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     CardCatalogo(
+                      rota: RoutasNome.SOBREITEM,
+                      argument: [
+                        "Detalhes",
+                        "Nike Adapt",
+                        "assets/nike/nike_adapt_bb_ab-removebg-preview.png",
+                      ],
                       imagem:
                           "assets/nike/nike_adapt_bb_ab-removebg-preview.png",
                       marca: "Nike Adapt",
                       valor: "80.000",
                     ),
                     CardCatalogo(
+                      rota: RoutasNome.SOBREITEM,
+                      argument: [
+                        "Detalhes",
+                        "Nike  Revolution",
+                        "assets/nike/tenis-nike-revolution-5-masculino-BQ3204-400-14-removebg-preview.png",
+                      ],
                       imagem:
                           "assets/nike/tenis-nike-revolution-5-masculino-BQ3204-400-14-removebg-preview.png",
                       marca: "Nike  Revolution",

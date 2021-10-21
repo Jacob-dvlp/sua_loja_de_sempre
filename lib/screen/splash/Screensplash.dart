@@ -10,7 +10,7 @@ class ScreenSplash extends StatelessWidget {
     return GetBuilder<Controllersplash>(
       init: Controllersplash(),
       builder: (_) => Scaffold(
-        backgroundColor: Colors.yellow,
+        backgroundColor: Colors.yellow[900],
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
