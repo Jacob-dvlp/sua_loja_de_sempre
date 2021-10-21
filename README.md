@@ -1,4 +1,4 @@
-## UI FEITO COM FLUTTER
+## UI Feito com Flutter e GetX
 
 ## Treinamento
 
